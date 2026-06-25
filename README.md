@@ -80,10 +80,10 @@ Supported games and their Steam AppIDs:
 
 ## Notes
 
-||- This only adds firewall rules it NEVER, EVER touches game files, so there's no realistic ban risk from using it.
-||- A game's in-game datacenter/ping settings menu (e.g. CS2's "Max Acceptable Ping" list) will still *show* a blocked region. that list reflects every datacenter that exists, not what your machine can currently reach. The block is working if your actual matchmaking ping stops reflecting that region, not if it disappears from the settings menu.
-||- Rules don't persist across reboot by default (same as most manual `iptables` rules), re-run `block` for your preferred regions each session, or look into `iptables-save`/`netfilter-persistent` if you want it tobe *permanent*.
-||- Re-routing can happen mid-session due to how Steam Datagram Relay works. Blocking the obvious nearby-but-bad-routing regions is usually enough, blocking everything except your one preferred region is usually unnecessary and can cause matchmaking timeouts if you block too aggressively. So take notes.
+- This only adds firewall rules it NEVER, EVER touches game files, so there's no realistic ban risk from using it.
+- A game's in-game datacenter/ping settings menu (e.g. CS2's "Max Acceptable Ping" list) will still *show* a blocked region. that list reflects every datacenter that exists, not what your machine can currently reach. The block is working if your actual matchmaking ping stops reflecting that region, not if it disappears from the settings menu.
+- Rules don't persist across reboot by default (same as most manual `iptables` rules), re-run `block` for your preferred regions each session, or look into `iptables-save`/`netfilter-persistent` if you want it tobe *permanent*.
+- Re-routing can happen mid-session due to how Steam Datagram Relay works. Blocking the obvious nearby-but-bad-routing regions is usually enough, blocking everything except your one preferred region is usually unnecessary and can cause matchmaking timeouts if you block too aggressively. So take notes.
 
 ## License
 
